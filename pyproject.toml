@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "github-parser"
+version = "0.1.0"
+description = ""
+authors = ["Ramazan <ramazanui2002@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.9.3"
+asyncpg = "^0.29.0"
+python-dateutil = "^2.9.0.post0"
+python-dotenv = "^1.0.1"
+fastapi = {extras = ["all"], version = "^0.110.1"}
+pydantic-settings = "^2.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
