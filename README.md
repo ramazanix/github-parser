@@ -5,7 +5,7 @@
 #### 2. Connect to it through ssh like
     ssh {username}@{vm_ip}
 #### 3. Install docker
-    sudo snap install docker
+    sudo apt install docker.io
 #### 4. Clone that repository
     git clone https://github.com/ramazanix/github-parser.git && cd github_parser
 #### 5. Define env variables. DB_HOSTNAME _must be_ ip of vm
