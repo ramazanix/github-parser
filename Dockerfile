@@ -15,6 +15,7 @@ COPY scripts /github_parser/scripts
 RUN pip install --no-cache-dir --upgrade -r /github_parser/requirements.txt
 COPY ./src /github_parser/src
 
+RUN chmod +x /github_parser/setup.sh
 ENTRYPOINT ["/github_parser/setup.sh"]
 
 CMD python -m uvicorn src:init_app --host 0.0.0.0 --port 80 --factory
