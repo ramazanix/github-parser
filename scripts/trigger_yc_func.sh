@@ -1,3 +1,3 @@
 #!/bin/bash
 
-yc serverless function invoke gh-parser
+/opt/yc/bin/yc serverless function invoke gh-parser
