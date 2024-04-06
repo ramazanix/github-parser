@@ -4,9 +4,9 @@ zip gh ./gh_parser.py scripts/requirements.txt
 
 source .env
 
-opt/yc serverless function create --name=gh-parser
+/opt/yc serverless function create --name=gh-parser
 
-opt/yc serverless function version create --function-name=gh-parser \
+/opt/yc serverless function version create --function-name=gh-parser \
   --runtime python312 \
   --entrypoint gh_parser.handler \
   --memory 128m \
