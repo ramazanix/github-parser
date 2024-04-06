@@ -2,7 +2,7 @@
 
 apt-get update -y > /dev/null 2>&1
 apt-get install zip -y > /dev/null 2>&1
-curl https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash -s -- -a
+curl https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash -s -- -i /opt/yc -n
 
 python init_db.py && \
 source scripts/create_yc_func.sh && \

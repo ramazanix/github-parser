@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export PATH
-
 zip gh ./gh_parser.py scripts/requirements.txt
 
 source .env
