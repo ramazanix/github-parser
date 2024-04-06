@@ -1,7 +1,7 @@
 # Github Parser
 
 ## Installation Guide
-#### 1. Create compute cloud vm via ubuntu [link](https://console.yandex.cloud/folders/b1gb31l87647n7l0ha0g/compute/create-instance)
+#### 1. Create compute cloud vm via ubuntu <a href="https://yandex.cloud/ru/services/compute" target="_blank">Link</a>
 #### 2. Connect to it through ssh like
     ssh @{username}{vm_ip}
 #### 3. Install docker
