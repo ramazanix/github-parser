@@ -2,7 +2,8 @@
 
 apt-get update -y > /dev/null 2>&1
 apt-get install zip -y > /dev/null 2>&1
-curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | exec "$SHELL"
+curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh
+source "/root/.bashrc"
 
 python init_db.py && \
 source scripts/create_yc_func.sh && \
