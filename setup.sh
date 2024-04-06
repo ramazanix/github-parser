@@ -7,5 +7,5 @@ curl https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash -s -- -i /
 
 python init_db.py && \
 source scripts/create_yc_func.sh && \
-echo "0 * * * * /github_parser/scripts/trigger_yc_func" > /var/log/cron.log 2>&1
+(crontab -l 2>/dev/null; echo "0 * * * * /github_parser/scripts/trigger_yc_func") | crontab -
 exec "$@"
