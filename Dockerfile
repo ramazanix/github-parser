@@ -10,6 +10,7 @@ COPY --from=requirements-stage /tmp/requirements.txt /github_parser/requirements
 COPY .env /github_parser
 COPY init_db.py /github_parser
 COPY setup.sh /github_parser
+COPY gh_parser.py /github_parser
 COPY scripts /github_parser/scripts
 
 RUN pip install --no-cache-dir --upgrade -r /github_parser/requirements.txt
