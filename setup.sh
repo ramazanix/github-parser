@@ -1,6 +1,7 @@
 #!/bin/bash
 
-apt-get install zip
+apt-get update -y
+apt-get install zip -y
 curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh && exec -l $SHELL
 
 python init_db.py && \
