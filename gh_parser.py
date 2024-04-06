@@ -1,5 +1,4 @@
 import aiohttp
-import asyncio
 import asyncpg
 import os
 from dateutil import parser
