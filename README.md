@@ -7,7 +7,7 @@
 #### 3. Install docker
     sudo apt install docker.io -y
 #### 4. Clone that repository
-    git clone https://github.com/ramazanix/github-parser.git && cd github_parser
+    git clone https://github.com/ramazanix/github-parser.git && cd github-parser
 #### 5. Define env variables. DB_HOSTNAME _must be_ ip of vm
     cat .env.example > .env; nano .env
 #### 6. Run docker compose
