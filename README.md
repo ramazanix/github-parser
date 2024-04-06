@@ -3,7 +3,7 @@
 ## Installation Guide
 #### 1. Create compute cloud vm via ubuntu. [Link](https://yandex.cloud/ru/services/compute)
 #### 2. Connect to it through ssh like
-    ssh @{username}{vm_ip}
+    ssh {username}@{vm_ip}
 #### 3. Install docker
     snap install docker
 #### 4. Clone that repository
