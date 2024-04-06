@@ -1,3 +1,5 @@
+#!/bin/bash
+
 zip gh ./gh_parser.py ./requirements.txt
 
 source .env
