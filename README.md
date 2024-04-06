@@ -5,11 +5,11 @@
 #### 2. Connect to it through ssh like
     ssh {username}@{vm_ip}
 #### 3. Install docker
-    sudo apt install docker.io -y
+    sudo snap refresh && sudo snap install docker
 #### 4. Clone that repository
     git clone https://github.com/ramazanix/github-parser.git && cd github-parser
 #### 5. Define env variables. DB_HOSTNAME _must be_ ip of vm
     cat .env.example > .env; nano .env
 #### 6. Run docker compose
     sudo docker compose up -d
-#### 7. Wait one-two minutes
+#### 7. Wait one-two minutes and move to http://{vm_ip}/docs
